@@ -1,0 +1,23 @@
+.customizeBtn {
+  position: relative;
+  overflow: hidden;
+  p {
+    position: absolute;
+    border: 1px solid var(--background);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 3s linear infinite;
+
+    @keyframes animate {
+      0% {
+        width: 0;
+        height: 0;
+      }
+      100% {
+        width: 350px;
+        height: 350px;
+      }
+    }
+  }
+}

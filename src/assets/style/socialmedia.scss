@@ -1,0 +1,151 @@
+.social-media-container {
+  // public class
+  .media-orientation {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .media-placement {
+    position: fixed;
+    width: 40px;
+    bottom: 0px; // start from bottom
+  }
+
+  .media-wrapper {
+    //media-orientation ,media-placement
+    left: 40px;
+    .media-ul {
+      margin: 0;
+      padding: 0;
+      .media-li {
+        display: flex;
+        list-style: none;
+        .media-link {
+          position: relative;
+          padding: 5px;
+          margin-top: 5px;
+          border-radius: 100%;
+          transition: 0.2s ease-in-out;
+          cursor: pointer;
+
+          .media-icon-title {
+            position: absolute;
+            visibility: hidden; // hidden title
+            opacity: 0;
+            transition: 0.3s;
+            top: 10px;
+            left: 50px;
+            font-weight: 700;
+            color: var(--primary);
+          }
+          &:hover {
+            transform: translate(0px, -4px);
+            background-color: var(--lightBackground);
+            color: var(--primary);
+
+            .media-icon-title {
+              visibility: visible; // :hover show title
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    //create ruler after icon
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 2px;
+      height: 50px;
+      opacity: 1;
+      margin-top: 10px;
+      background-color: var(--font-color);
+    }
+  }
+  .email-wrapper {
+    right: 40px;
+    //media-orientation ,media-placement
+    .email-li {
+      position: relative;
+      .email-link {
+        @apply text-xl font-medium;
+        position: relative;
+        margin: 0 auto;
+        writing-mode: vertical-lr; // text stand
+        letter-spacing: 0.1em;
+        color: var(--font-color);
+        opacity: 0.7;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out !important;
+        &:hover {
+          transform: translate(0px, -10px);
+          color: var(--primary) !important;
+          opacity: 1;
+          font-weight: 700;
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 2px;
+        height: 50px;
+        opacity: 1;
+        margin-top: 10px;
+        background-color: var(--font-color);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .media-wrapper {
+    left: 25px !important;
+  }
+  .email-wrapper {
+    right: 25px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .social-media-container {
+    display: none;
+  }
+}
+
+// slide right media
+
+.slide-right-enter-from,
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(-20px); // #1 start from the (left-right) and 0 opacity
+}
+.slide-right-enter-to,
+.slide-right-leave-from {
+  opacity: 1;
+  transform: translateX(0px); // #2 end from the (right-left) and 1 opacity
+}
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: 0.2s 1000ms; // #3 transition between #1 to #2
+}
+
+//slide left email
+
+.slide-left-enter-from,
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translateX(20px); // #1 start from the (right-left) and 0 opacity
+}
+.slide-left-enter-to,
+.slide-left-leave-from {
+  opacity: 1;
+  transform: translateX(0px); // #2 end from the (right-left) and 1 opacity
+}
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: 0.2s 1200ms; // #3 transition between #1 to #2
+}

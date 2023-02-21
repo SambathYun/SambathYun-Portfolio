@@ -1,0 +1,9 @@
+.scrollbar-hidden::-webkit-scrollbar {
+  scrollbar-gutter: stable both-edges;
+}
+
+//firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--lightestPrimary) #cccccc;
+}
