@@ -1,0 +1,76 @@
+:root {
+  --font-color: #869ba9;
+  --font-weight: 400;
+
+  --btn-fontColor: #fff;
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+
+  --nav-height: 100px;
+  --nav-height-scroll: 70px;
+  --nav-bg: rgba(8, 21, 33, 0.85);
+  --nav-shadow: rgba(0, 0, 0, 0.8);
+
+  --space-item: 24px;
+  --space-div: 40px;
+  --space-section: 56px;
+
+  --background: #081521;
+  --lightBackground: #173c5f;
+
+  --primary: #deb992;
+  --third: #178582;
+
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --black-shadow: 0 10px 30px -15px black;
+
+  --profile-gradient-1: #30281f;
+  --profile-gradient-2: #836e57;
+  --profile-gradient-3: #deb992;
+
+  //default colors
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary1: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+//layout
+@import "./style/body.scss";
+@import "./style/header.scss";
+@import "./style/footer.scss";
+
+//style
+@import "./style/profile.scss";
+@import "./style/circle.scss";
+@import "./style/socialmedia.scss";
+@import "./style/scrollbar.scss";
+@import "./style/themes.scss";
+@import "./style/timeline.scss";
+@import "./style/tooltip.scss";
+
+@import "./style/button.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

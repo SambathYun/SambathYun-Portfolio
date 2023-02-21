@@ -1,0 +1,32 @@
+.footer-container {
+  @apply text-lg  p-[var(--space-section)];
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+  .footer-wrapper {
+    @apply px-[var(--space-item)];
+    //transition
+    &.a-before-enter {
+      opacity: 0;
+      transform: translateX(20px);
+      transition: 0.5s;
+    }
+
+    &.a-enter {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+}

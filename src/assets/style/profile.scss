@@ -1,0 +1,22 @@
+.profile-wrapper {
+  border-radius: var(--border-radius-md);
+  .profile-photo {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    background: linear-gradient(
+      42deg,
+      var(--profile-gradient-1) 0%,
+      var(--profile-gradient-2) 43%,
+      var(--profile-gradient-3) 100%
+    );
+  }
+  img {
+    transition: 0.3s;
+    justify-items: center;
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.2) rotate(10deg);
+    }
+  }
+}

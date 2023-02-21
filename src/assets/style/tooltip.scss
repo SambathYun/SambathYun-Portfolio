@@ -1,0 +1,56 @@
+.customTooltip {
+  position: relative;
+  z-index: 99;
+
+  &:after {
+    @apply text-sm;
+    content: attr(gloss); //#1 listion to gross and get text
+    z-index: 98;
+    position: absolute;
+    bottom: -35px;
+    right: 0%;
+    width: auto;
+    white-space: nowrap; //#2 text wrap
+    padding: 5px 15px;
+
+    //#3 style
+    color: var(--font-color);
+    background: var(--lightBackground);
+    border-radius: var(--border-radius-md);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+    //#4transition
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover:after {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+  }
+  //   //create arrow
+  //   &:before {
+
+  //     content: "";
+  //     position: absolute;
+  //     top: 65%;
+  //     right: 15%;
+
+  //     //arrow
+  //     transform: rotate(180deg);
+  //     border-width: 7px;
+  //     border-style: solid;
+  //     border-color: var(--lightBackground) transparent transparent transparent;
+  //     //transtion
+  //     visibility: hidden;
+  //     opacity: 0;
+  //     transition: 0.3s;
+  //   }
+  //   &:hover:before {
+  //     visibility: visible;
+  //     opacity: 1;
+  //   }
+}
