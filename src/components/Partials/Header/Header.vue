@@ -19,7 +19,7 @@
     <nav class="navs-container">
       <div class="nav-logo">
         <Router-link :to="{ name: 'home' }">
-          <h1>SB</h1>
+          <h1>Sampar</h1>
         </Router-link>
       </div>
 
