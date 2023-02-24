@@ -8,22 +8,22 @@ import MyContact from "../view/MyContact";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "Home",
     component: MyHome,
   },
   {
     path: "/experience",
-    name: "experience",
+    name: "Experience",
     component: MyExperience,
   },
   {
     path: "/project",
-    name: "project",
+    name: "Project",
     component: MyProject,
   },
   {
     path: "/contact",
-    name: "contact",
+    name: "Contact",
     component: MyContact,
   },
 ];
@@ -39,6 +39,10 @@ const router = createRouter({
       return savedPosition;
     }
   },
+});
+
+router.afterEach((to) => {
+  document.title = `Sambath Yun | ${to.name}`;
 });
 
 export default router;
