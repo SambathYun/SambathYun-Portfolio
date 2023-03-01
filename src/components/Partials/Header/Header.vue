@@ -18,7 +18,7 @@
   >
     <nav class="navs-container">
       <div class="nav-logo">
-        <Router-link :to="{ name: 'home' }">
+        <Router-link :to="{ name: 'Home' }">
           <h1>SB</h1>
         </Router-link>
       </div>
@@ -28,9 +28,9 @@
           <Transition name="bounce" appear style="transition-delay: 0.1s">
             <li class="nav-li">
               <Router-link
-                :to="{ name: 'home' }"
+                :to="{ name: 'Home' }"
                 class="nav-item"
-                :class="{ active: $route.name == 'home' }"
+                :class="{ active: $route.name == 'Home' }"
               >
                 <Icon>
                   <Home20Filled />
@@ -43,9 +43,9 @@
           <Transition name="bounce" appear style="transition-delay: 0.2s">
             <li class="nav-li">
               <Router-link
-                :to="{ name: 'experience' }"
+                :to="{ name: 'Experience' }"
                 class="nav-item"
-                :class="{ active: $route.name == 'experience' }"
+                :class="{ active: $route.name == 'Experience' }"
               >
                 <Icon>
                   <Briefcase20Filled />
@@ -58,9 +58,9 @@
           <Transition name="bounce" appear style="transition-delay: 0.3s">
             <li class="nav-li">
               <Router-link
-                :to="{ name: 'project' }"
+                :to="{ name: 'Project' }"
                 class="nav-item"
-                :class="{ active: $route.name == 'project' }"
+                :class="{ active: $route.name == 'Project' }"
               >
                 <Icon>
                   <Code20Filled />
@@ -73,9 +73,9 @@
           <Transition name="bounce" appear style="transition-delay: 0.4s">
             <li class="nav-li">
               <Router-link
-                :to="{ name: 'contact' }"
+                :to="{ name: 'Contact' }"
                 class="nav-item"
-                :class="{ active: $route.name == 'contact' }"
+                :class="{ active: $route.name == 'Contact' }"
               >
                 <Icon>
                   <Mail20Filled />

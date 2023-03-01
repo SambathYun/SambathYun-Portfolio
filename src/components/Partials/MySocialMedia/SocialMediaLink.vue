@@ -75,7 +75,7 @@
     <Transition name="slide-left" appear>
       <div class="email-wrapper media-orientation media-placement">
         <div class="email-li">
-          <div class="email-link" @click="$router.push('/contact')">
+          <div class="email-link" @click="$router.push('/Contact')">
             yunsambath21@gmail.com
           </div>
         </div>

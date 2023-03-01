@@ -12,40 +12,40 @@
         <ul class="aside-ul">
           <li
             class="aside-li"
-            :class="{ active: $route.name == 'home' }"
+            :class="{ active: $route.name == 'Home' }"
             @click="closeAside()"
           >
-            <Router-link :to="{ name: 'home' }" class="aside-item">
+            <Router-link :to="{ name: 'Home' }" class="aside-item">
               <RenderIcon :icon="Home20Filled" size="20"> </RenderIcon>
               <span class="text-lg">Home</span>
             </Router-link>
           </li>
           <li
             class="aside-li"
-            :class="{ active: $route.name == 'experience' }"
+            :class="{ active: $route.name == 'Experience' }"
             @click="closeAside()"
           >
-            <Router-link :to="{ name: 'experience' }" class="aside-item">
+            <Router-link :to="{ name: 'Experience' }" class="aside-item">
               <RenderIcon :icon="Briefcase20Filled" size="20"> </RenderIcon>
               <span class="text-lg">Experience</span>
             </Router-link>
           </li>
           <li
             class="aside-li"
-            :class="{ active: $route.name == 'project' }"
+            :class="{ active: $route.name == 'Project' }"
             @click="closeAside()"
           >
-            <Router-link :to="{ name: 'project' }" class="aside-item">
+            <Router-link :to="{ name: 'Project' }" class="aside-item">
               <RenderIcon :icon="Code20Filled" size="20"> </RenderIcon>
               <span class="text-lg">Project</span>
             </Router-link>
           </li>
           <li
             class="aside-li"
-            :class="{ active: $route.name == 'contact' }"
+            :class="{ active: $route.name == 'Contact' }"
             @click="closeAside()"
           >
-            <Router-link :to="{ name: 'contact' }" class="aside-item">
+            <Router-link :to="{ name: 'Contact' }" class="aside-item">
               <RenderIcon :icon="Mail20Filled" size="20"> </RenderIcon>
               <span class="text-lg">Contact Me</span>
             </Router-link>
