@@ -14,13 +14,7 @@
     </div>
 
     <div
-      class="
-        offer-wrapper
-        flex flex-wrap
-        text-center
-        gap-4
-        mb-[var(--space-item)]
-      "
+      class="offer-wrapper flex flex-wrap text-center gap-4 mb-[var(--space-item)]"
     >
       <div
         class="offer-card flex flex-col justify-between shadow-md"
@@ -40,13 +34,7 @@
         </div>
 
         <div
-          class="
-            flex flex-row
-            gap-1
-            mx-auto
-            text-[color:var(--primary)]
-            items-center
-          "
+          class="flex flex-row gap-1 mx-auto text-[color:var(--primary)] items-center"
         >
           <RenderIcon
             :icon="level"
@@ -58,32 +46,10 @@
       </div>
     </div>
     <div class="offer-link flex w-100 justify-center">
-      <Router-link :to="{ name: 'contact' }">
+      <Router-link :to="{ name: 'Contact' }">
         <button
           v-customizebtn
-          class="
-            customizeBtn
-            py-2
-            px-4
-            text-base
-            text-[color:var(--btn-fontColor)]
-            font-medium
-            rounded-md
-            shadow-sm
-            bg-[color:var(--primary)]
-            transition
-            ease-in-out
-            opacity-90
-            hover:opacity-100
-            hover:-translate-y-1
-            hover:scale-110
-            hover:bg-[color:var(--primary)]
-            duration-300
-            text-center
-            flex
-            items-center
-            gap-2
-          "
+          class="customizeBtn py-2 px-4 text-base text-[color:var(--btn-fontColor)] font-medium rounded-md shadow-sm bg-[color:var(--primary)] transition ease-in-out opacity-90 hover:opacity-100 hover:-translate-y-1 hover:scale-110 hover:bg-[color:var(--primary)] duration-300 text-center flex items-center gap-2"
         >
           <RenderIcon :icon="Mail16Filled" size="20"></RenderIcon>
           <span>Get In Touch</span>
