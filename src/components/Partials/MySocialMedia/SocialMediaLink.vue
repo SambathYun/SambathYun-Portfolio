@@ -6,7 +6,7 @@
           <li class="media-li">
             <div
               class="media-link"
-              @click="openSite('https://t.me/sambath_yun')"
+              @click="openSite('https://t.me/sambathyun')"
             >
               <RenderIcon :icon="Telegram" size="35"></RenderIcon>
               <span class="media-icon-title">Telegram</span>

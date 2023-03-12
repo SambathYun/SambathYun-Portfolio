@@ -30,15 +30,18 @@
             </button>
           </Router-link>
 
-          <Router-link :to="{ name: 'Contact' }">
-            <button
-              v-customizebtn
-              class="customizeBtn py-2 px-4 text-base text-[color:var(--btn-fontColor)] font-medium rounded-md shadow-sm bg-[color:var(--primary)] transition ease-in-out opacity-90 hover:opacity-100 hover:-translate-y-1 hover:scale-110 hover:bg-[color:var(--primary)] duration-300 text-center flex items-center gap-2"
-            >
-              <RenderIcon :icon="Document16Regular" size="20"></RenderIcon>
-              <span>Resume</span>
-            </button>
-          </Router-link>
+          <button
+            @click="
+              openSite(
+                'https://drive.google.com/file/d/1o3PTJK4RMT8VzNcAA5RBDWOHLHIryIwG/view?fbclid=IwAR1aiMg4_N6_T1WC0tHTEpiqdv4PChxIQY1pARove87QUbi3SPEfkhMUAiM'
+              )
+            "
+            v-customizebtn
+            class="customizeBtn py-2 px-4 text-base text-[color:var(--btn-fontColor)] font-medium rounded-md shadow-sm bg-[color:var(--primary)] transition ease-in-out opacity-90 hover:opacity-100 hover:-translate-y-1 hover:scale-110 hover:bg-[color:var(--primary)] duration-300 text-center flex items-center gap-2"
+          >
+            <RenderIcon :icon="Document16Regular" size="20"></RenderIcon>
+            <span>Resume</span>
+          </button>
         </div>
       </div>
       <div class="profile-wrapper relative truncate">
@@ -53,9 +56,9 @@
         My name is Yun Sambath or call me Sampar. I’m a developer with a
         full-stack background and a keen eye for good design. I love to make
         complex things simple and joy to use. Currently, I focus on building web
-        apps with VueJs(v2)(v3) and Laravel.<br />
-        Over the past 5 years, I’ve gained Experience across some aspects of the
-        application lifecycle, including frontend, backend, and dev-ops. It
+        apps with VueJs(v3) and Laravel.<br />
+        Over the past one years, I’ve gained Experience across some aspects of
+        the application lifecycle, including frontend, backend, and dev-ops. It
         allows me to take full ownership of a project from design to
         implementation and deployment
       </div>
@@ -86,6 +89,10 @@ import RenderIcon from "@/components/Partials/Rendericon.vue";
 //     ripples.remove();
 //   }, 2000);
 // }
+
+const openSite = (url) => {
+  window.open(url, "_blank");
+};
 </script>
 
 

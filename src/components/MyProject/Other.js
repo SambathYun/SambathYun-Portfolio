@@ -16,12 +16,12 @@ export default {
       headIcon: FolderOpenRegular,
       links: [
         {
-          link: "https://github.com/BroJenuel-Youtube/lets-chat",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: Github,
           tooltip: "Open In Github",
         },
         {
-          link: "https://lets-chat-b6w7.onrender.com/",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: ExternalLinkSquareAlt,
           tooltip: "Open Link",
         },
@@ -47,12 +47,12 @@ export default {
       headIcon: FolderOpenRegular,
       links: [
         {
-          link: "https://i.ibb.co/wr4b0BD/portfoliov1-min.png",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: Github,
           tooltip: "Open in Github",
         },
         {
-          link: "https://versionone.jenuelganawed.com",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: ExternalLinkSquareAlt,
           tooltip: "Open Link",
         },
@@ -74,12 +74,12 @@ export default {
       headIcon: FolderOpenRegular,
       links: [
         {
-          link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: Github,
           tooltip: "Open In Github",
         },
         {
-          link: "https://calculator.jenuelganawed.com",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: ExternalLinkSquareAlt,
           tooltip: "Open Link",
         },
@@ -97,12 +97,12 @@ export default {
       headIcon: FolderOpenRegular,
       links: [
         {
-          link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: Github,
           tooltip: "Open In Github",
         },
         {
-          link: "https://calculator.jenuelganawed.com",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: ExternalLinkSquareAlt,
           tooltip: "Open Link",
         },
@@ -120,12 +120,12 @@ export default {
       headIcon: FolderOpenRegular,
       links: [
         {
-          link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: Github,
           tooltip: "Open In Github",
         },
         {
-          link: "https://calculator.jenuelganawed.com",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: ExternalLinkSquareAlt,
           tooltip: "Open Link",
         },
@@ -143,12 +143,12 @@ export default {
       headIcon: FolderOpenRegular,
       links: [
         {
-          link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: Github,
           tooltip: "Open In Github",
         },
         {
-          link: "https://calculator.jenuelganawed.com",
+          link: "https://github.com/SambathYun?tab=repositories",
           icon: ExternalLinkSquareAlt,
           tooltip: "Open Link",
         },
